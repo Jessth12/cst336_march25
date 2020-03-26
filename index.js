@@ -26,7 +26,7 @@ app.get('/results', function(req, res){
 			console.log('data=',data);
 			let img_url = data[key]["thumbnail_url"].split("-")[0]+"-M.jpg";
 			let title = data[key].details.title;
-			let authors = data[key].details.authors[0];
+			let authors = data[key].details.authors;
 			let publish_date = data[key].details.publish_date;
 			let bib_key = data[key].bib_key;
 			let number_of_pages = data[key].details.number_of_pages;
