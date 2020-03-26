@@ -1,0 +1,15 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h1> Open Library</h1>
+		<h5>Please enter the ISBN of the book you'd like to retrieve</h5>
+		<form action='/results' method='GET'>
+			<span>ISBN</span>
+			<input type='number' name='search' placeholder='search your movie ...'>
+			<button class='btn btn-info'>Search</button>
+		</form>
+	</div>
+</div>
+
+<%- include ('templates/footer'); -%>

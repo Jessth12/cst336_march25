@@ -1,0 +1,24 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1> SEARCH RESULTS </h1>
+        <button class='btn btn-info' onclick='location.href="/";'>Search Again</button>
+    </div>
+        
+	    <div>
+	        <img class='poster' src=<%= img_url %> />
+	        <div>
+                <h2>Title: <%= title %></h2>
+                <span>Authors: <%= authors %></span>
+                <br>
+                <span>Publish date: <%= publish_date %></span>
+                <br>
+                <span>ISBN: <%= bibkeys %></span>
+            </div>
+        </div>	
+        
+  
+</div>
+
+<%- include ('templates/footer'); -%>
