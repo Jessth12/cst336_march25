@@ -2,6 +2,10 @@ body{
 	margin: 50px 0px auto auto;
 	text-align: center;
 }
+.poster{
+  border: 5px solid black;
+  border-radius: 20px;
+}
 
 .footer{
 	width: 100%;

@@ -28,7 +28,8 @@ app.get('/results', function(req, res){
 			let title = data[key].details.title;
 			let authors = data[key].details.authors[0];
 			let publish_date = data[key].details.publish_date;
-			let bibkeys = data[key].bibkeys;
+			let bib_key = data[key].bib_key;
+			let number_of_pages = data[key].details.number_of_pages;
 
 			res.render('results', {
 				"data": data[key], 
@@ -36,7 +37,8 @@ app.get('/results', function(req, res){
 				"title": title,
 				"authors":authors,
 				"publish_date": publish_date,
-				"bibkeys": bibkeys
+				"bib_key": bib_key,
+				"number_of_pages": number_of_pages
 			});
 		}
 	});
